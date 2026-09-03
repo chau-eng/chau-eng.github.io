@@ -1,0 +1,11 @@
+title: "Huỳnh Lê Bá Châu | Structural Engineering"
+description: "Portfolio cá nhân, giới thiệu Tool CBS và chia sẻ bài viết kỹ thuật kết cấu."
+theme: minima
+
+# Cấu hình KaTeX / MathJax để gõ công thức toán học, nội lực, ứng suất
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+
+author:
+  name: "Huỳnh Lê Bá Châu"
