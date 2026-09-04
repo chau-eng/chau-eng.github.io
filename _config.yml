@@ -1,11 +1,15 @@
-title: "Huỳnh Lê Bá Châu | Structural Engineering"
-description: "Portfolio cá nhân, giới thiệu Tool CBS và chia sẻ bài viết kỹ thuật kết cấu."
+title: "CBS | Structural Engineering"
+description: "Công cụ & kiến thức cho kỹ sư kết cấu"
 theme: minima
+author: Huỳnh Lê Bá Châu
 
-# Cấu hình KaTeX / MathJax để gõ công thức toán học, nội lực, ứng suất
 markdown: kramdown
 kramdown:
   math_engine: mathjax
 
-author:
-  name: "Huỳnh Lê Bá Châu"
+# Thiết lập thanh menu điều hướng
+header_pages:
+  - cbs-tool.md
+  - portfolio.md
+  - huong-dan.md
+  - ket-cau.md
