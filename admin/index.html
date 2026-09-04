@@ -1,12 +1,137 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quản trị bài viết - CBS</title>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  </head>
-  <body>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  </body>
-</html>
+---
+layout: default
+title: Trang chủ
+---
+
+<style>
+  .hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f8fafc;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    border: 1px solid #e2e8f0;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: #0f172a;
+  }
+  .hero-subtitle {
+    font-size: 1.15rem;
+    color: #475569;
+    margin-bottom: 25px;
+  }
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .btn-main {
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .btn-primary { background: #2563eb; color: #fff; }
+  .btn-secondary { background: #fff; color: #2563eb; border: 1px solid #2563eb; }
+  
+  .section-block { margin-bottom: 50px; }
+  .section-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+  }
+  
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  .card-box {
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 25px 20px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .card-box h3 { margin-top: 0; margin-bottom: 10px; font-size: 1.25rem; }
+  
+  .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .tech-tag {
+    padding: 8px 18px;
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #334155;
+  }
+</style>
+
+<div class="hero-section">
+  <div class="hero-title">CBS — STRUCTURAL ENGINEERING</div>
+  <div class="hero-subtitle">Công cụ & kiến thức cho kỹ sư kết cấu</div>
+  <div class="btn-group">
+    <a href="/cbs-tool" class="btn-main btn-primary">CBS Tool</a>
+    <a href="/portfolio" class="btn-main btn-secondary">Xem Portfolio</a>
+  </div>
+</div>
+
+<div class="section-block">
+  <h2 class="section-heading">CBS TOOL</h2>
+  <div class="grid-3">
+    <div class="card-box">
+      <h3>BEAM</h3>
+      <p>Tự động hóa tính toán & kiểm tra dầm bê tông cốt thép / dầm thép.</p>
+    </div>
+    <div class="card-box">
+      <h3>COLUMN</h3>
+      <p>Phân tích biểu đồ tương tác, tính toán cốt thép cột theo TCVN / ACI.</p>
+    </div>
+    <div class="card-box">
+      <h3>DRAW</h3>
+      <p>Xuất bản vẽ chi tiết và thống kê thép tự động sang AutoCAD / Revit.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section-block">
+  <h2 class="section-heading">PORTFOLIO</h2>
+  <p style="text-align: center; color: #64748b;">Tổng hợp các công trình thực tế, dự án tự động hóa thiết kế và nghiên cứu ứng dụng.</p>
+  <div style="text-align: center; margin-top: 15px;">
+    <a href="/portfolio" style="font-weight: 600;">Xem chi tiết tất cả dự án &rarr;</a>
+  </div>
+</div>
+
+<div class="section-block">
+  <h2 class="section-heading">HƯỚNG DẪN</h2>
+  <div class="tag-container">
+    <a href="/huong-dan" class="tech-tag">AutoCAD</a>
+    <a href="/huong-dan" class="tech-tag">Excel</a>
+    <a href="/huong-dan" class="tech-tag">Revit</a>
+    <a href="/huong-dan" class="tech-tag">SAP2000</a>
+    <a href="/huong-dan" class="tech-tag">Python</a>
+    <a href="/huong-dan" class="tech-tag">CBS Tool</a>
+  </div>
+</div>
+
+<div class="section-block">
+  <h2 class="section-heading">KẾT CẤU</h2>
+  <p style="text-align: center; color: #64748b;">Bài viết mới nhất về kết cấu thép, bê tông, tiêu chuẩn thiết kế và phương pháp tính toán.</p>
+  <div style="text-align: center; margin-top: 15px;">
+    <a href="/ket-cau" style="font-weight: 600;">Xem danh mục bài viết &rarr;</a>
+  </div>
+</div>
